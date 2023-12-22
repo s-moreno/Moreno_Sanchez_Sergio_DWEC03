@@ -1,0 +1,100 @@
+body {
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none; /* estándar */
+}
+
+#showPass:hover {
+  cursor: pointer;
+  color: #00d1b2;
+}
+
+#btn-info:hover {
+  cursor: pointer;
+  color: #00d1b2;
+}
+
+.hero-body img {
+  width: 50px;
+  height: auto;
+}
+
+
+/* GRILLA Y LOSETAS DEL BUSCAMINAS */
+#grilla {
+  display: grid;
+  grid-auto-rows: 35px;
+  justify-content: center;
+}
+
+.loseta {
+  background-color: #a9b4bb;
+  border: 2px solid black;
+  color: white;
+  text-align: center;
+  padding: 1px;
+  margin: 1px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.loseta:hover {
+  border: 2px solid red;
+}
+
+.vacio {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  padding: 1px;
+  margin: 1px;
+  cursor: pointer;
+}
+
+.minaExplota {
+  background-color: red;
+  border: 1px solid black;
+  background-image: url("../images/bomb.png");
+  background-position: center;
+  padding: 1px;
+  margin: 1px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-size: cover;
+}
+
+.minaError {
+  background-color: white;
+  border: 1px solid black;
+  background-image: url("../images/NO-bomb.png");
+  background-position: center;
+  padding: 1px;
+  margin: 1px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-size: cover;
+}
+
+.minaBien{
+  background-color: white;
+  border: 1px solid black;
+  background-image: url("../images/bomb.png");
+  background-position: center;
+  padding: 1px;
+  margin: 1px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-size: cover;
+}
+
+.bandera {
+  background-image: url("../images/flag.png");
+  background-position: center;
+  background-size: cover;
+}
