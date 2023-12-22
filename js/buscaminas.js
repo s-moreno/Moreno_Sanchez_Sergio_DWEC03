@@ -64,7 +64,8 @@ $(document).ready(function () {
 
   function verificarCookieAcceso() {
     if (document.cookie.indexOf('BuscaminasLogin=true') === -1) {
-      window.location.href = 'index.html';
+      //window.location.href = 'index.html';
+      window.open("index.html","_self"); // para que funcione en github pages
     }
   }
 
