@@ -96,7 +96,7 @@ $(document).ready(function () {
       if (validarLogin(usuario, contraseina)) {
         document.cookie = "BuscaminasLogin=true;path=/juego.html";
         // window.location = "../juego.html";
-        window.open("juego.html","_self"); // para que funcione en github pages.
+        window.open("../juego.html","_self"); // para que funcione en github pages.
       } else {
         $("#notificacion").html(
           `<p class="notification is-danger is-light has-text-centered">
