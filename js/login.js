@@ -94,7 +94,7 @@ $(document).ready(function () {
 
     if (validarContraseina(contraseina)) {
       if (validarLogin(usuario, contraseina)) {
-        document.cookie = "BuscaminasLogin=true;path=/juego.html";
+        document.cookie = "BuscaminasLogin=true";
         // window.location = "../juego.html";
         window.open("../juego.html","_self"); // para que funcione en github pages.
       } else {
