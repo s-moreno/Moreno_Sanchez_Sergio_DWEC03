@@ -7,7 +7,6 @@
 
 
   FUNCIONES:
-   * verificarCookieAcceso()
    * iniciarJuego(dificultad)
    * descubrirLoseta($loseta, dificultad)
    * pintarLosetaVacia($loseta, $grilla, dificultad)
@@ -48,7 +47,6 @@ $(document).ready(function () {
       MAIN
   **********/
 
-  verificarCookieAcceso();
   // desactivamos el menú del click derecho
   $(document).on("contextmenu", function (event) {
     event.preventDefault();
@@ -61,13 +59,6 @@ $(document).ready(function () {
   /*************
       FUNCIONES:
   **************/
-
-  function verificarCookieAcceso() {
-    if (document.cookie.indexOf('BuscaminasLogin=true') === -1) {
-      //window.location.href = 'index.html';
-      window.open("../index.html","_self"); // para que funcione en github pages
-    }
-  }
 
   /**
    * Función que pinta en pantalla todos los elementos del juego.
